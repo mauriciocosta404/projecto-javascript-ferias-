@@ -1,0 +1,33 @@
+.askMe .section-body ul{
+    display: grid;
+    grid-template:repeat(5,1fr)/ 1fr 1fr;
+    gap: 10px;
+}
+.askMe .section-body li a{
+    width: 30px;
+    height: 30px;
+    border:1px solid var(--secound-bgColor);
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.askMe li a i{
+    font-size: 0.8em;
+}
+.askMe  li.active a i{
+    font-size: 2em;
+}
+.askMe .section-body li span{
+    background-color: var(--secound-bgColor);
+    padding: 5px 13px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--secound-color);
+}
+
+.askMe .section-body li em{
+    color: var(--primary-txtColor);
+    font-style: normal;
+}

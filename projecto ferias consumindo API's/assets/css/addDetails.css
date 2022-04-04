@@ -1,0 +1,22 @@
+.details .detail{
+    display: flex;
+    align-items: center;
+    color: var(--secound-color);
+    margin: 15px 0;
+}
+.detail .detail-icon{
+    margin-right: 15px;
+}
+.detail .detail-info{
+    line-height: 18pt;
+    font-size: 10.5pt;
+}
+.detail .detail-info p{
+    text-transform: uppercase;
+}
+em{
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary-txtColor);
+    
+}

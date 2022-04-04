@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login/style.css">
+</head>
+<body>
+    
+    <div class="center">
+        <button id="show-login">
+            Login
+        </button>
+    </div>
+    <div class="popup"> 
+
+        <div class="close-btn">&times;</div>
+        
+        <form class="form" method="get" action="dashboard.html"> 
+            <h2>Login</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-element">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" class="form-element">
+                <label for="remember-me">Remember-me</label>
+            </div>
+            
+            <div class="form-element">
+                <button oncl>Login</button>
+            </div>
+            <div class="form-element">
+                <a href="#">forgot your password?</a>
+            </div>
+
+        </form>        
+    </div>
+
+    <script src="assets/js/query.js"></script>
+    <script src="login/script.js"></script>
+</body>
+</html>

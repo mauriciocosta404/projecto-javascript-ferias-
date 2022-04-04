@@ -1,0 +1,100 @@
+/*HEADER-----------------------------Header - cabecalho*/
+.header{
+    background-color: var(--primary-bgColor);
+    max-height: 160px;
+    margin-bottom: 20px;
+}
+.header .container{
+    max-width: 1128px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+/*left*/
+.header .left{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+.left .logo{
+    width: 50px;
+    margin-right:15px;
+}
+.menu li a{
+    margin: 2px 5px;
+    padding: 5px;
+    font-weight: 400;
+}
+.menu li i{
+    margin-left: 5px;
+    font-size: 0.6em;
+}
+/*right*/
+.header .right{
+    flex: 1;
+    max-height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*mudar o modo button*/
+
+.right > .button-move{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px #39a2db59;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #053742;
+    transition: left 1s;
+}
+.button-move .ball-move{
+    left: 30px;
+}
+.dark{
+    background-color: #1c1e21;
+}
+
+.right .icon-action i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+.right .button{
+    margin:0 10px;
+}
+.right .button button{
+    background-color: var(--color-green);
+    color: var(--primary-bgColor);
+    line-height: 15pt;
+}
+.right .button i{
+    margin-right: 10px;
+    font-size: 0.7em;
+}
+.right .avatar{
+    display: flex;
+    align-items: center;
+}
+.avatar img{
+    width: 30px;
+    margin-right: 5px;
+}
+.avatar i{
+    margin-left: 5px;
+    font-size: 0.6em;
+}

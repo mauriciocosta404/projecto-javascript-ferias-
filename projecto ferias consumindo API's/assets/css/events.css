@@ -1,0 +1,41 @@
+.events .section-body{
+    display: flex;
+    column-gap: 20px;
+}
+.card{
+	border-radius: 10px;
+	border:1px solid var(--secound-bgColor);
+	flex:1;
+	overflow: hidden;
+}
+.card-header img{
+	height: 130px;
+	object-fit: cover;/*Ajustar o objecto *fixar-lo*/
+}
+.card-body{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    justify-content: space-between;
+	padding: 20px;
+    min-height: 150px;
+}
+.card-body .event-groupName{
+	background-color: var(--secound-bgColor);
+	border-radius: 5px;
+	margin: 0;
+	padding: 2px 10px;
+	color: var(--color-vilote);
+	font-size: 12px;
+    font-weight: 500;
+}
+.card-body p{
+    font-weight: 500;
+	font-size: 13px;
+}
+.card-body small{
+	color: var(--secound-color);
+}
+.save{
+	color: darkgreen;
+}

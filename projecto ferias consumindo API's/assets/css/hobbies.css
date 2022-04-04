@@ -1,0 +1,14 @@
+.hobbies .hobbies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    gap: 15px 10px;
+}
+.hobbies-list li{
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: var(--secound-bgColor);
+    color: var(--color-vilote);
+}

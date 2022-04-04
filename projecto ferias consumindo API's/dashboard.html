@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/menuBar.css">
+    <link rel="stylesheet" href="assets/css/summary.css">
+    <link rel="stylesheet" href="assets/css/ask.css">
+    <link rel="stylesheet" href="assets/css/groups.css">
+    <link rel="stylesheet" href="assets/css/hobbies.css">
+    <link rel="stylesheet" href="assets/css/posts.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/manager.css">
+    <link rel="stylesheet" href="assets/css/addDetails.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/carregar.css">
+    <title>HayStack: Group-Details</title>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner">
+            <div class="porcent">100%</div>
+        </div>
+    </div>
+    <header class="none header">
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="LOGO">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#posts">Posts</a></li>
+                        <li><a href="#">Resources <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#">People <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#groups">Groups <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right">
+                <div class="button-move">
+                    <div class="ball"></div>
+                </div>
+                <div class="icon-action">
+                    <i class="fas fa-search"></i>
+                    <i  class="far fa-bookmark save_cliked"></i>
+                    <i class="fas fa-users"></i>
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="button">
+                    <button class="btn">+ Create</button>
+                </div>
+                <div class="avatar">
+                    <img src="assets/img/avatar.png" alt="avatar image">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="none main">
+        <div class="container ">
+            <div class="container-main none-save">
+                <section class="profile">
+                    <div class="cover-photo"><img ></div>
+                    <div class="profile-view">
+                        <div class="photo-area">
+                            <div class="photo"><img ></div>
+                        </div>
+                        <div class="details">
+                            <div class="detail-top">
+                                <span class="name"></span>
+                                <button class="btn"><i class="green fas fa-marker"></i> Edit Profile</button>
+                            </div>
+                            <div class="craft"></div>
+                            <div class="address"></div>
+                            <div class="links">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                </ul>
+
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-bar">
+                    <ul>
+                        <li><a class="active" href="#">Overview</a></li>
+                        <li><a href="#groups">Groups</a></li>
+                        <li><a href="#posts">Posts</a></li>
+                        <li><a href="#pages">Pages</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </section>
+                
+                <section class="default-section summary ">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Summary</h2>
+                        </div>
+                        <div class="icon-action"><i class="green fas fa-marker"></i></div>
+                    </div>
+                    <div class="section-body">
+                        <p></p>
+                    </div>
+                </section>
+
+                <section class="default-section hobbies">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Hobbies</h2>
+                        </div>
+                        <div class="icon-action"><i class="green fas fa-marker"></i></div>
+                    </div>
+                    <div class="section-body">
+                        <ul class="hobbies-list">
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="default-section posts" id="posts">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Posts</h2>
+                            <button class="title-btn btn">
+                                View All 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div >
+                        <div class="toggle-save"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="section-body"></div>
+                </section>
+
+                <section class="default-section pages" id="pages">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Pages</h2>
+                            <button class="title-btn btn">
+                                View All 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="section-body">
+                    </div>
+                </section>
+
+                <section class="default-section askMe">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Ask Me About</h2> 
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="icon-action"><i class="green fas fa-marker"></i></div>
+                    </div>
+                    <div class="section-body">
+                        <ul>
+                            <li class="active">
+                                <a href="#"><i class="green fas fa-check-square"></i></a>
+                                <span><em>A very Long Example Text Here </em> &centerdot; 42</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Example </em> &centerdot; 132</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Medium Length </em> &centerdot; 51</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Analytics </em> &centerdot; 23</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>A very Long Example </em> &centerdot; 1</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Human Resources </em> &centerdot; 24</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Last Test </em> &centerdot; 3</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Interaction Design </em> &centerdot; 42</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>Interface Design </em> &centerdot; 45</span>
+                            </li>
+                            <li>
+                                <a href="#"><i class="green fas fa-plus"></i></a>
+                                <span><em>A very Long Example Text Here </em> &centerdot; 42</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="default-section groups" id="groups">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Groups</h2>
+                            <button class="title-btn btn">
+                                View All 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="section-body">
+                        <div class="group">
+                            <div class="group-id">
+                                <div class="group-id--img">
+                                    <img >
+                                </div>
+                                <div class="group-id--text">
+                                    <p class="group--name">Group Name Here</p>
+                                    <p class="group--type">Chimer Resource Group</p>
+                                </div>
+                            </div>
+                            <div class="group-members">
+                                <ul class="members-photo">
+                                    <li><a class="bgOne" href="#"><img ></a></li>
+                                    <li><a class="bgTwo" href="#"><img ></a></li>
+                                    <li><a class="bgThree" href="#"><img ></a></li>
+                                </ul>
+                                <div class="members-number">
+                                    <p>817 Members</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="group-id">
+                                <div class="group-id--img">
+                                    <img >
+                                </div>
+                                <div class="group-id--text">
+                                    <p class="group--name">Group Name Here</p>
+                                    <p class="group--type">Chimer Resource Group</p>
+                                </div>
+                            </div>
+                            <div class="group-members">
+                                <ul class="members-photo">
+                                    <li><a class="bgOne" href="#"><img ></a></li>
+                                    <li><a class="bgTwo" href="#"><img ></a></li>
+                                    <li><a class="bgThree" href="#"><img ></a></li>
+                                </ul>
+                                <div class="members-number">
+                                    <p>817 Members</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="default-section events" id="events">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Upcoming Events</h2>
+                            <button class="title-btn btn">
+                                View All 
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                    <div class="section-body">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="media/event1.jpg" alt="evento">
+                            </div>
+                            <div class="card-body">
+                                <span class="event-groupName">Group Name</span>
+                                <p>
+                                    Christine Brown To Lead Rabinhood Crypto as COO 3rd Headline Here
+                                </p>
+                
+                                <small>2:30 PM PST</small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="media/event2.jpg" alt="evento">
+                            </div>
+                            <div class="card-body">
+                                <span class="event-groupName">Group Name</span>
+                                <p>
+                                    Show & Tell
+                                </p>
+                
+                                <small>2:30 PM PST</small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="media/event3.jpg" alt="evento">
+                            </div>
+                            <div class="card-body">
+                                <span class="event-groupName">Group Name</span>
+                                <p>
+                                    Lunch & Learn: Immigrants & Canadian Immigration Groups
+                                </p>
+                
+                                <small>2:30 PM PST</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="container-aside">
+                <section class="default-section users">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>My Manager</h2>
+                        </div>
+                    </div>
+                    <div class="section-body"></div>
+                </section>
+
+                <section class="default-section details">
+                    <div class="section-head">
+                        <div class="title">
+                            <h2>Additional Details</h2>
+                        </div>
+                        <div class="icon-action"><i class=" green fas fa-marker"></i></div>
+                    </div>
+                    <div class="section-body">
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p>Email</p>
+                                <em class="email green"></em>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p>Phone</p>
+                                <em class="phone"></em>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class="far fa-user"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p>UserName</p>
+                                <em class="username"></em>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p>website</p>
+                                <em class="website green"></em>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="detail-icon">
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p>Join Date</p>
+                                <em class="joinDate">2 months ago, on 12/15/2020</em>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="models">
+        <div class="user">
+            <div class="user-img"><img></div>
+            <div class="user-info">
+                <p class="name">--</p>
+                <small class="craft">---</small>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-icon">
+                <i>P</i>
+            </div>
+            <div class="page-info">
+                <p class="page-info--name"></p>
+                <p class="page-info--type"></p>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-info">
+                <p class="post-info--title"></p>
+                <p class="post-info--body"></p>
+            </div>
+            <div class="post-media">
+                <img >
+            </div>
+        </div>
+    </div>
+<!--
+    @Modal Area
+-->
+    <div class="modal">
+        <div class="container__modal">
+            <div class="modal--title">
+                <h2>Title</h2>
+            </div>
+            <div class="modal__body">
+            </div>
+        </div>
+        <div class="close--modal fas fa-times" onclick="closeModal()"></div>
+    </div>
+ <!----------modal_form------------------>
+ <div class="modal_form">
+    <div class="container_modal_form">
+        <div class="modal_title">
+            <h2>Add link</h2>
+        </div>
+        <div class="modal_form_body">
+            <textarea name="add_link" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="modal--add">
+            <button>Add link</button>
+        </div>
+    </div>
+    <div class="close-modal_form">X</div>
+</div>
+<!-------------summary------------>
+<div class="modal_form_summary">
+    <div class="container_modal_form">
+        <div class="modal_title">
+            <h2>Add Text</h2>
+        </div>
+        <div class="modal_form_body">
+            <textarea name="add_link" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="modal--add">
+            <button>Add Text</button>
+        </div>
+    </div>
+    <div class="close-modal">X</div>
+</div>
+    <!--Scripts-->
+    <script src="assets/js/otherUsersdata.js"></script>
+    <script src="assets/js/query.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/carregar.js"></script>
+    <script src="assets/js/save.js"></script>
+</body>
+</html>

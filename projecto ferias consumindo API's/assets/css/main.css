@@ -1,0 +1,17 @@
+main{
+    background-color: var(--primary-bgColor);
+    color: var(--primary-txtColor);
+}
+main .container{
+    max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.container .container-main{
+    max-width: 745px;
+}
+.container .container-aside{
+   /* max-width:  362px;*/
+   width:  362px;
+}

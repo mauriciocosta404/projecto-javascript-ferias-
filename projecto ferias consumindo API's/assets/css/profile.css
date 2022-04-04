@@ -1,0 +1,91 @@
+.profile{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    margin-bottom: 10px;
+    color: var(--primary-txtColor);
+}
+.profile .cover-photo{
+    width: 745px;
+    max-height: 165px;
+    border-radius: 15px 15px 0 0;
+    overflow:hidden;
+}
+.profile .profile-view{
+    border:2px solid var(--secound-bgColor);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    padding-bottom: 10px;
+    transition: all ease 0.5s;
+}
+.profile-view .photo-area{
+    flex: 1;
+    padding-right:15px;
+
+}
+.photo-area .photo{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left:20%;
+    bottom:45%;
+    border-radius: 50%;
+    overflow: hidden;
+    border:4px solid var(--primary-bgColor);
+    box-shadow: 0 0 10px var(--secound-bgColor);
+    background-color: var(--primary-bgColor);
+}
+.profile-view .details{
+    flex: 2.5;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.details .detail-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.details .detail-top .name{
+    font-size: 18pt;
+    font-weight: 600;
+}
+.details .detail-top button{
+    border:2px solid var(--secound-bgColor);
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--primary-txtColor);
+}
+.details .craft{
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--secound-color);
+    margin-bottom: 8px;
+}
+.details .address{
+    min-width: 200px;
+    display: inline-block;
+    background-color: var(--secound-bgColor);
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 10pt;
+}
+.details .links{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.details .links a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border:1px solid var(--secound-bgColor);
+    border-radius: 5px;
+    line-height: 45px;
+}
+a i{
+    font-size: 1.8em;
+}

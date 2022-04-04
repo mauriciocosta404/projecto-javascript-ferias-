@@ -1,0 +1,25 @@
+.post{
+    display: flex;
+    column-gap: 25px;
+}
+.post:not(:first-child){
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.post-info p:not(:first-child){
+    color: var(--secound-color);
+    font-size: 10pt;
+    margin-top: 10px;
+    word-break: break-all;
+    font-weight: 450;
+}
+.post .post-media{
+    flex-shrink: 0;
+    width: 100px !important;
+    height: 80px;
+    border:1px solid var(--secound-color);
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}

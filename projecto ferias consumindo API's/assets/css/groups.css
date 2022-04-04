@@ -1,0 +1,50 @@
+.group{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secound-bgColor);
+    padding:10px 0;
+}
+.group:last-child{
+    border-bottom: none;
+}
+.group .group-id{
+    display: flex;
+    font-size: 10pt;
+}
+.group-id .group-id--img{
+    width: 40px;
+    height: 40px;
+    background-color: var(--secound-bgColor);
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.group-id .group--name{
+    font-weight: 600;
+}
+.group .group-members{
+    display: flex;
+    align-items: center;
+}
+.group-members .members-photo{
+    margin-right: 15px;
+}
+.members-photo li:first-child{
+    position: relative;
+    left: 10px;
+}
+.members-photo li:last-child{
+    position: relative;
+    left: -10px;
+}
+.members-photo a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.group-members .members-number{
+    border-radius: 40px;
+    padding: 6px;
+    background-color: var(--secound-bgColor);
+    font-size: 8pt;
+}

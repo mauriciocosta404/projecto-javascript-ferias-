@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-txtColor:#000;
+    --secound-color:#787b86;
+    --primary-bgColor:#fff;
+    --secound-bgColor:#f5f5f8;
+    --color-vilote:#9478ee;
+    --color-green:#00c805;
+    --body-bg:#fdfdfd;
+}
+.light:root{
+    --primary-txtColor:#fff;
+    --primary-bgColor:#000;
+    --secound-bgColor:#050508;
+    --body-bg:#0d0d0d;
+}
+a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 11pt;
+    text-align: center;
+    color: var(--primary-txtColor);
+}
+i{
+    font-size: 11pt;
+    color: var( --primary-txtColor);
+}
+img{
+    display: inline-block;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+.none{
+    display: none;
+}
+.models{
+    display: none;
+}
+.btn{
+    border:none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.green{
+    color: var(--color-green);
+}
+.bgOne{
+    background-color: var(--color-green);
+}
+.bgTwo{
+    background-color: var(--color-vilote);
+}
+.bgThree{
+    background-color: var(--secound-color);
+}
+body{
+    background-color: var(--body-bg);
+    font-family: 'Open Sans','Segoe UI', 'Helvetica Neue', sans-serif;
+}
+.default-section{
+    border:2px solid var(--secound-bgColor);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.default-section .section-head{
+    display:  flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.section-head .title h2{
+    display: inline-block;
+    font-size: 13pt;
+    margin-right: 5px;
+}
+.section-head .title .title-btn{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    border:1px solid var(--secound-bgColor);
+    background-color: transparent;
+    font-size: 9pt;
+    font-weight: 600;
+    color: var(--primary-txtColor);
+}
+.section-head .icon-action{
+    width: 30px;
+    height: 30px;
+    border:1px solid var(--secound-bgColor);
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.section-body{
+    max-height: 300px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+}

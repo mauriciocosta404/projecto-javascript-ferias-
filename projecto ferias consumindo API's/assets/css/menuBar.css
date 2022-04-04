@@ -1,0 +1,24 @@
+.menu-bar{
+    margin-bottom: 10px;
+
+}
+.menu-bar ul{
+    background-color: var(--secound-bgColor);
+    border-radius: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}.menu-bar li{
+    width: calc(97% / 6);
+    border-radius: 5px;
+    overflow:hidden;
+}
+.menu-bar a{
+    font-weight: 600;
+    padding: 5px 0;
+    color: var(--secound-color)
+}
+.menu-bar li .active{
+    background-color: #fff;
+    color: var(--primary-txtColor);
+}
